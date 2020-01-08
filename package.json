@@ -1,7 +1,7 @@
 {
   "name": "auto-close-issues",
   "description": "Automatically close issues that don't follow the issue template",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Lucas Bento",
     "url": "https://github.com/lucasbento"
