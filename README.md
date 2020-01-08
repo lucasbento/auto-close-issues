@@ -1,6 +1,4 @@
-# Automatically close issues
-
-Automatically close issues that don't follow the issue template.
+# Close issues that don't follow the issue template
 
 ## How it works
 
