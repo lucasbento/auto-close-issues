@@ -10064,9 +10064,9 @@ const getIssueCloseMessage = () => {
   const { issue } = github.context;
   const closedIssueLabel = core.getInput("closed-issues-label");
 
-  if (doesIssueMatchAnyTemplate) {
-    // Only reopen the issue if there's a `closed-issues-label` so it knows if it was previously closed
-    // because of the wrong template
+  if (doesIssueMatchAnyTemplate || payload.action !== "opened") {
+    // Only reopen the issue if there's a `closed-issues-label` so it knows that
+    // it was previously closed because of the wrong template
     if (payload.issue.state === "closed" && closedIssueLabel) {
       const labels = (
         await client.issues.listLabelsOnIssue({
