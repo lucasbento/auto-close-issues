@@ -1,0 +1,16 @@
+name: "Auto close issues"
+description: "Automatically close issues that don't follow the issue template"
+author: "Lucas Bento"
+
+branding:
+  icon: "archive"
+  color: "red"
+
+inputs:
+  github-token:
+    description: The `GITHUB_TOKEN` secret.
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

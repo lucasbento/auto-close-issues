@@ -1,0 +1,30 @@
+{
+  "name": "auto-close-issues",
+  "description": "Automatically close issues that don't follow the issue template",
+  "version": "0.0.1",
+  "author": {
+    "name": "Lucas Bento",
+    "url": "https://github.com/lucasbento"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.0.0",
+    "mdjson": "^2.0.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.21.0"
+  },
+  "homepage": "https://github.com/lucasbento/auto-close-issues",
+  "keywords": [
+    "actions",
+    "automatic",
+    "close",
+    "issues"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "https://github.com/lucasbento/auto-close-issues",
+  "scripts": {
+    "build": "ncc build src/index.js"
+  }
+}
