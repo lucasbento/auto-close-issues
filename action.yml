@@ -10,6 +10,12 @@ inputs:
   github-token:
     description: The `GITHUB_TOKEN` secret.
     required: true
+  issue-close-message:
+    description: Use default message or input field.
+    required: false
+  closed-issues-label:
+    description: Use default label or input field.
+    required: false
 
 runs:
   using: "node12"
