@@ -35,6 +35,9 @@ const getIssueCloseMessage = () => {
 
   // Compare template titles with issue body
   const doesIssueMatchAnyTemplate = issueTemplates.some(template => {
+    if (!Boolean(template.localeCompare("config.yml"))) {
+      return false;
+    }
     const templateMarkdown = fs.readFileSync(
       `${ISSUE_TEMPLATE_DIR}/${template}`,
       "utf-8"
