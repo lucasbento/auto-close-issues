@@ -7,7 +7,7 @@
     "url": "https://github.com/lucasbento"
   },
   "dependencies": {
-    "@actions/core": "^1.2.0",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^2.0.0",
     "mdjson": "^2.0.1"
   },
